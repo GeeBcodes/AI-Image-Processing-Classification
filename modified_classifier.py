@@ -93,7 +93,7 @@ def display_gradcam(img_path, heatmap, alpha=0.4):
     ax2.imshow(overlay)
     ax2.axis("off")
     plt.tight_layout()
-    plt.show()
+    plt.savefig("gradcam.png")
 
 
 # =============== 3) Occlusion Functions ===================
@@ -199,7 +199,7 @@ def apply_occlusions(img_path, heatmap, threshold=0.5):
         ax.axis("off")
 
     plt.tight_layout()
-    plt.show()
+    plt.savefig("occlusions.png")
 
 
 # =============== 4) Main Classification + Grad-CAM ===============
